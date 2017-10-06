@@ -15,10 +15,7 @@ class AVPlayerVC: AVPlayerViewController, AVPlayerViewControllerDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let videoURL = URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")
-        let player = AVPlayer(url: videoURL!)
-        self.player = player
-        self.player?.play()
+        let videoURL = URL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")        
     }
 
     override func didReceiveMemoryWarning() {
