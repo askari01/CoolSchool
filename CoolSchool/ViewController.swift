@@ -17,6 +17,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         IAPService.shared.purchase(product: .consumable)
         IAPService.shared.purchase(product: .consumableTest)
         IAPService.shared.purchase(product: .consumableTest2)
+        IAPService.shared.restorePurchases()
     }
 
     override func didReceiveMemoryWarning() {
