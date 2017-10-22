@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362927651F9D1118000C78A4 /* IAPProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362927641F9D1118000C78A4 /* IAPProduct.swift */; };
+		362927671F9D11C5000C78A4 /* IAPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362927661F9D11C5000C78A4 /* IAPService.swift */; };
 		366327171F86BB460094BCBC /* AVPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366327161F86BB460094BCBC /* AVPlayerVC.swift */; };
 		36906D0E1F86A44400CBD58C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D0D1F86A44400CBD58C /* AppDelegate.swift */; };
 		36906D101F86A44400CBD58C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D0F1F86A44400CBD58C /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		362927641F9D1118000C78A4 /* IAPProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPProduct.swift; sourceTree = "<group>"; };
+		362927661F9D11C5000C78A4 /* IAPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPService.swift; sourceTree = "<group>"; };
 		366327161F86BB460094BCBC /* AVPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerVC.swift; sourceTree = "<group>"; };
 		36906D0A1F86A44400CBD58C /* CoolSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36906D0D1F86A44400CBD58C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				36906D161F86A44400CBD58C /* LaunchScreen.storyboard */,
 				36906D191F86A44400CBD58C /* Info.plist */,
 				366327161F86BB460094BCBC /* AVPlayerVC.swift */,
+				362927641F9D1118000C78A4 /* IAPProduct.swift */,
+				362927661F9D11C5000C78A4 /* IAPService.swift */,
 			);
 			path = CoolSchool;
 			sourceTree = "<group>";
@@ -264,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				36906D101F86A44400CBD58C /* ViewController.swift in Sources */,
+				362927671F9D11C5000C78A4 /* IAPService.swift in Sources */,
 				36906D0E1F86A44400CBD58C /* AppDelegate.swift in Sources */,
+				362927651F9D1118000C78A4 /* IAPProduct.swift in Sources */,
 				366327171F86BB460094BCBC /* AVPlayerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
