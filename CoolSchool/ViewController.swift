@@ -14,6 +14,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         IAPService.shared.getProduct()
+        IAPService.shared.purchase(product: .consumable)
+        IAPService.shared.purchase(product: .consumableTest)
+        IAPService.shared.purchase(product: .consumableTest2)
     }
 
     override func didReceiveMemoryWarning() {

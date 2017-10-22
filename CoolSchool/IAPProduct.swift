@@ -10,4 +10,6 @@ import Foundation
 
 enum IAPProduct: String {
     case consumable = "com.askari.CoolSchool.VU"
+    case consumableTest = "com.askari.CoolSchool.Test"
+    case consumableTest2 = "BooBooTest"
 }

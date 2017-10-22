@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		362927641F9D1118000C78A4 /* IAPProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPProduct.swift; sourceTree = "<group>"; };
 		362927661F9D11C5000C78A4 /* IAPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPService.swift; sourceTree = "<group>"; };
+		3631D85A1F9D16D000A4EE85 /* CoolSchool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoolSchool.entitlements; sourceTree = "<group>"; };
 		366327161F86BB460094BCBC /* AVPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerVC.swift; sourceTree = "<group>"; };
 		36906D0A1F86A44400CBD58C /* CoolSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36906D0D1F86A44400CBD58C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +104,7 @@
 		36906D0C1F86A44400CBD58C /* CoolSchool */ = {
 			isa = PBXGroup;
 			children = (
+				3631D85A1F9D16D000A4EE85 /* CoolSchool.entitlements */,
 				36906D0D1F86A44400CBD58C /* AppDelegate.swift */,
 				36906D0F1F86A44400CBD58C /* ViewController.swift */,
 				36906D111F86A44400CBD58C /* Main.storyboard */,
@@ -204,6 +206,11 @@
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
 					};
 					36906D1D1F86A44400CBD58C = {
 						CreatedOnToolsVersion = 9.0;
@@ -441,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoolSchool/CoolSchool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCDJ2647RH;
 				INFOPLIST_FILE = CoolSchool/Info.plist;
@@ -457,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoolSchool/CoolSchool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCDJ2647RH;
 				INFOPLIST_FILE = CoolSchool/Info.plist;
