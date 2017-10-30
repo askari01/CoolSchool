@@ -17,11 +17,14 @@ class IAPService: NSObject {
     var paymentQueue = SKPaymentQueue.default()
     
     func getProduct() {
-        let products = Set([IAPProduct.consumable.rawValue,
-                            IAPProduct.consumableTest.rawValue,
-                            IAPProduct.consumableTest2.rawValue])
+        let products = Set([
+                            IAPProduct.consumable.rawValue,
+                            IAPProduct.consumableTest.rawValue//,
+                            //IAPProduct.consumableTest2.rawValue
+            ])
         print ("***************")
         print (products)
+        print ("***************")
         let request: SKProductsRequest = SKProductsRequest(productIdentifiers: products)
         request.delegate = self
         request.start()

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		362927651F9D1118000C78A4 /* IAPProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362927641F9D1118000C78A4 /* IAPProduct.swift */; };
 		362927671F9D11C5000C78A4 /* IAPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362927661F9D11C5000C78A4 /* IAPService.swift */; };
+		3631F9A81FA76A160005282F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3631F9A71FA76A160005282F /* StoreKit.framework */; };
 		366327171F86BB460094BCBC /* AVPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366327161F86BB460094BCBC /* AVPlayerVC.swift */; };
 		36906D0E1F86A44400CBD58C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D0D1F86A44400CBD58C /* AppDelegate.swift */; };
 		36906D101F86A44400CBD58C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D0F1F86A44400CBD58C /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		362927641F9D1118000C78A4 /* IAPProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPProduct.swift; sourceTree = "<group>"; };
 		362927661F9D11C5000C78A4 /* IAPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPService.swift; sourceTree = "<group>"; };
 		3631D85A1F9D16D000A4EE85 /* CoolSchool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoolSchool.entitlements; sourceTree = "<group>"; };
+		3631F9A71FA76A160005282F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		366327161F86BB460094BCBC /* AVPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerVC.swift; sourceTree = "<group>"; };
 		36906D0A1F86A44400CBD58C /* CoolSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36906D0D1F86A44400CBD58C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3631F9A81FA76A160005282F /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3631F9A41FA758500005282F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3631F9A71FA76A160005282F /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		36906D011F86A44400CBD58C = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +99,7 @@
 				36906D211F86A44400CBD58C /* CoolSchoolTests */,
 				36906D2C1F86A44400CBD58C /* CoolSchoolUITests */,
 				36906D0B1F86A44400CBD58C /* Products */,
+				3631F9A41FA758500005282F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,6 +220,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplePay = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
 								enabled = 1;
 							};
 						};
@@ -448,7 +463,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CoolSchool/CoolSchool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FKYVPQPX6;
 				INFOPLIST_FILE = CoolSchool/Info.plist;
@@ -465,7 +479,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CoolSchool/CoolSchool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5FKYVPQPX6;
 				INFOPLIST_FILE = CoolSchool/Info.plist;
