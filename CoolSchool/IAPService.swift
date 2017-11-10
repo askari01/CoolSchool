@@ -74,14 +74,19 @@ extension SKPaymentTransactionState {
     func status() -> String{
         switch self {
             case .deferred:
+                print("deffered")
                 return ("deffered")
             case .failed:
+                print("failed")
                 return ("failed")
             case .purchased:
+                print("purchased")
                 return ("purchased")
             case .purchasing:
+                print("purchasing")
                 return ("purchasing")
             case .restored:
+                print("restored")
                 return ("restored")
         }
     }
