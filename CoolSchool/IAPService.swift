@@ -18,13 +18,13 @@ class IAPService: NSObject {
     
     func getProduct() {
         let products = Set([
-                            IAPProduct.consumable.rawValue,
-                            IAPProduct.consumableTest.rawValue//,
-                            //IAPProduct.consumableTest2.rawValue
+                IAPProduct.nonConsumable.rawValue,
+                IAPProduct.consumableTest.rawValue,
+                IAPProduct.consumableTest2.rawValue
             ])
-        print ("***************")
+        print ("***************Product")
         print (products)
-        print ("***************")
+        print ("***************Product")
         let request: SKProductsRequest = SKProductsRequest(productIdentifiers: products)
         request.delegate = self
         request.start()
@@ -44,16 +44,16 @@ class IAPService: NSObject {
 
 extension IAPService: SKProductsRequestDelegate {
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
-        print ("***************")
+        print ("***************ProductR")
         print (response.products)
-        print ("***************")
+        print ("***************ProductR")
         
         self.products = response.products
         
         for product in response.products {
-            print ("***************")
+            print ("***************ProductT")
             print (product.localizedTitle)
-            print ("***************")
+            print ("***************ProductT")
         }
     }
 }

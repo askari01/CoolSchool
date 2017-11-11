@@ -9,7 +9,7 @@
 import Foundation
 
 enum IAPProduct: String {
-    case consumable = "com.DDH.CoolSchool.VU"
+    case nonConsumable = "com.DDH.CoolSchool.VU"
     case consumableTest = "com.DDH.CoolSchool.Test"
-//    case consumableTest2 = "BooBooTest"
+    case consumableTest2 = "com.DDH.CoolSchool.testingTest"
 }
