@@ -22,12 +22,10 @@ class IAPService: NSObject {
                 IAPProduct.consumableTest.rawValue,
                 IAPProduct.consumableTest2.rawValue
             ])
-        print ("***************Product")
-        print (products)
-        print ("***************Product")
         let request: SKProductsRequest = SKProductsRequest(productIdentifiers: products)
         request.delegate = self
         request.start()
+        paymentQueue.add(self)
     }
     
     func purchase(product: IAPProduct) {
@@ -37,23 +35,15 @@ class IAPService: NSObject {
     }
     
     func restorePurchases() {
-        print ("restoring purchases")
         paymentQueue.restoreCompletedTransactions()
     }
 }
 
 extension IAPService: SKProductsRequestDelegate {
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
-        print ("***************ProductR")
-        print (response.products)
-        print ("***************ProductR")
-        
         self.products = response.products
-        
         for product in response.products {
-            print ("***************ProductT")
             print (product.localizedTitle)
-            print ("***************ProductT")
         }
     }
 }
@@ -74,19 +64,14 @@ extension SKPaymentTransactionState {
     func status() -> String{
         switch self {
             case .deferred:
-                print("deffered")
                 return ("deffered")
             case .failed:
-                print("failed")
                 return ("failed")
             case .purchased:
-                print("purchased")
                 return ("purchased")
             case .purchasing:
-                print("purchasing")
                 return ("purchasing")
             case .restored:
-                print("restored")
                 return ("restored")
         }
     }
