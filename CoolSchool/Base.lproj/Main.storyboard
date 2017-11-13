@@ -16,7 +16,68 @@
                 <avPlayerViewController title="Main Intro" videoGravity="AVLayerVideoGravityResizeAspect" id="2aH-JX-PxS" customClass="AVPlayerVC" customModule="CoolSchool" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="en6-o3-4Tc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="132"/>
+            <point key="canvasLocation" x="13" y="132"/>
+        </scene>
+        <!--WebVC-->
+        <scene sceneID="JgA-A1-n1e">
+            <objects>
+                <viewController id="GR6-uL-bc1" customClass="WebVC" customModule="CoolSchool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fYA-Mv-6Or"/>
+                        <viewControllerLayoutGuide type="bottom" id="rMd-mq-lei"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="85m-Fm-Txi">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5I-uV-N1n">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gAn-VL-rDi" appends="YES" id="IvX-KD-gH7"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Cqs-je-qMp">
+                                <rect key="frame" x="388" y="169" width="37" height="37"/>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39w-za-9lm">
+                                <rect key="frame" x="64" y="8" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="7C6-11-0k9"/>
+                                </constraints>
+                                <state key="normal" title="Main">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="" id="yIV-g2-404"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="k5I-uV-N1n" secondAttribute="bottom" id="3rZ-re-dPZ"/>
+                            <constraint firstItem="k5I-uV-N1n" firstAttribute="top" secondItem="fYA-Mv-6Or" secondAttribute="bottom" id="9mE-te-LhC"/>
+                            <constraint firstItem="k5I-uV-N1n" firstAttribute="leading" secondItem="85m-Fm-Txi" secondAttribute="leading" id="Gj7-3f-YP2"/>
+                            <constraint firstItem="k5I-uV-N1n" firstAttribute="centerX" secondItem="Cqs-je-qMp" secondAttribute="centerX" id="HpE-AT-Dyw"/>
+                            <constraint firstItem="k5I-uV-N1n" firstAttribute="centerY" secondItem="Cqs-je-qMp" secondAttribute="centerY" id="NjR-Nm-be2"/>
+                            <constraint firstItem="39w-za-9lm" firstAttribute="leading" secondItem="85m-Fm-Txi" secondAttribute="leadingMargin" id="SCh-jL-Q9c"/>
+                            <constraint firstItem="39w-za-9lm" firstAttribute="top" secondItem="fYA-Mv-6Or" secondAttribute="bottom" constant="8" symbolic="YES" id="SOo-fT-zbI"/>
+                            <constraint firstAttribute="trailing" secondItem="k5I-uV-N1n" secondAttribute="trailing" id="d6l-jz-R1i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loading" destination="Cqs-je-qMp" id="BpR-Wk-GT2"/>
+                        <outlet property="webView" destination="k5I-uV-N1n" id="nVJ-Aj-pMO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CFf-EA-KCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="gAn-VL-rDi"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="1118"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -177,12 +238,12 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="WOr-74-ppR" id="BrQ-J9-eWt"/>
-                        <segue destination="xI3-Pm-rzj" kind="show" identifier="video" id="jAb-t8-pEp"/>
+                        <segue destination="GR6-uL-bc1" kind="show" identifier="video" id="MBM-jR-kh3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-373.15270935960592" y="132"/>
+            <point key="canvasLocation" x="-799" y="132"/>
         </scene>
         <!--VideoVC-->
         <scene sceneID="tez-po-mve">
@@ -197,27 +258,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8e-HO-ifp" customClass="YouTubePlayerView" customModule="YouTubePlayer">
-                                <rect key="frame" x="138" y="20" width="537" height="253"/>
+                                <rect key="frame" x="0.0" y="20" width="812" height="253"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhC-To-5Ao">
-                                <rect key="frame" x="138" y="281" width="537" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhC-To-5Ao">
+                                <rect key="frame" x="138" y="281" width="536" height="65"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Zmg-nm-aLD"/>
-                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="DJ7-rh-dl7">
+                                <rect key="frame" x="396" y="136" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="d8e-HO-ifp" firstAttribute="centerY" secondItem="x3d-Lj-XYZ" secondAttribute="centerY" constant="-41" id="YqP-uM-laW"/>
-                            <constraint firstItem="lhh-FS-ZLB" firstAttribute="top" secondItem="d8e-HO-ifp" secondAttribute="bottom" constant="81" id="job-8F-KjR"/>
-                            <constraint firstItem="d8e-HO-ifp" firstAttribute="centerX" secondItem="x3d-Lj-XYZ" secondAttribute="centerX" id="lgX-5N-kl7"/>
-                            <constraint firstItem="d8e-HO-ifp" firstAttribute="leading" secondItem="x3d-Lj-XYZ" secondAttribute="leading" constant="138" id="vu0-Cf-d1c"/>
+                            <constraint firstItem="dhC-To-5Ao" firstAttribute="top" secondItem="d8e-HO-ifp" secondAttribute="bottom" constant="8" symbolic="YES" id="HWe-wu-rE1"/>
+                            <constraint firstItem="d8e-HO-ifp" firstAttribute="centerY" secondItem="DJ7-rh-dl7" secondAttribute="centerY" id="JYc-yD-UVV"/>
+                            <constraint firstItem="lhh-FS-ZLB" firstAttribute="top" secondItem="dhC-To-5Ao" secondAttribute="bottom" constant="8" symbolic="YES" id="KAP-84-ZgX"/>
+                            <constraint firstItem="DJ7-rh-dl7" firstAttribute="centerX" secondItem="dhC-To-5Ao" secondAttribute="centerX" id="Pyg-wt-y8d"/>
+                            <constraint firstAttribute="trailing" secondItem="d8e-HO-ifp" secondAttribute="trailing" id="Stj-jg-Ij6"/>
+                            <constraint firstItem="dhC-To-5Ao" firstAttribute="leading" secondItem="x3d-Lj-XYZ" secondAttribute="leadingMargin" constant="74" id="YEM-IX-TPe"/>
+                            <constraint firstItem="d8e-HO-ifp" firstAttribute="top" secondItem="x3d-Lj-XYZ" secondAttribute="top" constant="20" symbolic="YES" id="biK-Q4-YnF"/>
+                            <constraint firstItem="DJ7-rh-dl7" firstAttribute="top" secondItem="LPT-nb-2v5" secondAttribute="bottom" constant="136" id="lMZ-et-Kr9"/>
+                            <constraint firstItem="d8e-HO-ifp" firstAttribute="centerX" secondItem="DJ7-rh-dl7" secondAttribute="centerX" id="w5J-LQ-1MT"/>
+                            <constraint firstItem="d8e-HO-ifp" firstAttribute="leading" secondItem="x3d-Lj-XYZ" secondAttribute="leading" id="zPf-xz-rkL"/>
                         </constraints>
                     </view>
                     <connections>
@@ -226,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzq-Ac-HkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-373" y="1089"/>
+            <point key="canvasLocation" x="-800" y="1118"/>
         </scene>
     </scenes>
     <resources>

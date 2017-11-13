@@ -19,6 +19,7 @@
 		36906D181F86A44400CBD58C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36906D161F86A44400CBD58C /* LaunchScreen.storyboard */; };
 		36906D231F86A44400CBD58C /* CoolSchoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D221F86A44400CBD58C /* CoolSchoolTests.swift */; };
 		36906D2E1F86A44400CBD58C /* CoolSchoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D2D1F86A44400CBD58C /* CoolSchoolUITests.swift */; };
+		36D6FC971FB9C50600A80005 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D6FC961FB9C50600A80005 /* WebVC.swift */; };
 		36E219BE1FB97C31006EEC3B /* VideosCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E219BD1FB97C31006EEC3B /* VideosCVCell.swift */; };
 		36E7DF221FB9A7A700FEF5B7 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E7DF211FB9A7A700FEF5B7 /* VideoVC.swift */; };
 		578A02E61B67A248E59F3B5B /* Pods_CoolSchoolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54389FD3F6B13142A8B76459 /* Pods_CoolSchoolUITests.framework */; };
@@ -63,6 +64,7 @@
 		36906D291F86A44400CBD58C /* CoolSchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolSchoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36906D2D1F86A44400CBD58C /* CoolSchoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolSchoolUITests.swift; sourceTree = "<group>"; };
 		36906D2F1F86A44400CBD58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36D6FC961FB9C50600A80005 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		36E219BD1FB97C31006EEC3B /* VideosCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCVCell.swift; sourceTree = "<group>"; };
 		36E7DF211FB9A7A700FEF5B7 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		54389FD3F6B13142A8B76459 /* Pods_CoolSchoolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolSchoolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 				362927661F9D11C5000C78A4 /* IAPService.swift */,
 				36E219BD1FB97C31006EEC3B /* VideosCVCell.swift */,
 				36E7DF211FB9A7A700FEF5B7 /* VideoVC.swift */,
+				36D6FC961FB9C50600A80005 /* WebVC.swift */,
 			);
 			path = CoolSchool;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				36E219BE1FB97C31006EEC3B /* VideosCVCell.swift in Sources */,
 				36906D0E1F86A44400CBD58C /* AppDelegate.swift in Sources */,
 				36E7DF221FB9A7A700FEF5B7 /* VideoVC.swift in Sources */,
+				36D6FC971FB9C50600A80005 /* WebVC.swift in Sources */,
 				362927651F9D1118000C78A4 /* IAPProduct.swift in Sources */,
 				366327171F86BB460094BCBC /* AVPlayerVC.swift in Sources */,
 			);

@@ -63,9 +63,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         if segue.identifier == "video" {
             if let selectedIndexPath = collectionView?.indexPathsForSelectedItems {
                 let selectedIndexPathRow = selectedIndexPath.first?.row
-                if let vc = segue.destination as? VideoVC {
+                if let vc = segue.destination as? WebVC {
                     let (name, token, video) = videoData[selectedIndexPathRow!]
-                    vc.videoURL = URL(string: "https://www.youtube.com/watch?v=\(video)")!
+                    vc.videoURL = URL(string: "https://www.youtube.com/embed/\(video)")!
                     print (vc.videoURL)
                 }
             }
@@ -74,6 +74,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func didPressButton(_ tag: Int) {
         print("I have pressed a button with a tag: \(tag)")
+        IAPService.shared.purchase(product: .consumableTest)
     }
 
     @IBAction func buyAction(_ sender: UIButton) {
