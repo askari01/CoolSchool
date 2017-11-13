@@ -6,6 +6,7 @@ target 'CoolSchool' do
   use_frameworks!
 
   # Pods for CoolSchool
+  pod 'Kingfisher'
 
   target 'CoolSchoolTests' do
     inherit! :search_paths

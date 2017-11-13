@@ -1,0 +1,6 @@
+framework module Pods_CoolSchoolUITests {
+  umbrella header "Pods-CoolSchoolUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

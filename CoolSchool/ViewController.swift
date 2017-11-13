@@ -40,10 +40,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let (name, token) = videoData[indexPath.row]
         print ("http://img.youtube.com/vi/\(token).jpg")
         let imageURL = URL(string: "http://img.youtube.com/vi/\(token).jpg")
-        let imageData = NSData(contentsOf: imageURL! as URL)
-        if imageData != nil {
-            cell.image.image = UIImage(data: imageData! as Data)
-        }
+        cell.setValues(picture1: imageURL!)
         return cell
     }
     

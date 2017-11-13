@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class VideosCVCell: UICollectionViewCell {
     
@@ -15,4 +16,10 @@ class VideosCVCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+    func setValues(picture1: URL ) {
+        self.image.kf.indicatorType = .activity
+        self.image.kf.setImage(with: picture1)
+    }
+    
 }
