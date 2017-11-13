@@ -176,12 +176,46 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="2aH-JX-PxS" kind="show" identifier="video" id="Hyb-Ew-nxt"/>
+                        <outlet property="collectionView" destination="WOr-74-ppR" id="BrQ-J9-eWt"/>
+                        <segue destination="xI3-Pm-rzj" kind="show" identifier="video" id="jAb-t8-pEp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-373.15270935960592" y="132"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="tez-po-mve">
+            <objects>
+                <viewController id="xI3-Pm-rzj" customClass="VideoVC" customModule="CoolSchool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LPT-nb-2v5"/>
+                        <viewControllerLayoutGuide type="bottom" id="lhh-FS-ZLB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x3d-Lj-XYZ">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8e-HO-ifp" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                <rect key="frame" x="0.0" y="20" width="812" height="326"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d8e-HO-ifp" firstAttribute="centerY" secondItem="x3d-Lj-XYZ" secondAttribute="centerY" constant="-4.5" id="YqP-uM-laW"/>
+                            <constraint firstItem="lhh-FS-ZLB" firstAttribute="top" secondItem="d8e-HO-ifp" secondAttribute="bottom" constant="8" id="job-8F-KjR"/>
+                            <constraint firstItem="d8e-HO-ifp" firstAttribute="centerX" secondItem="x3d-Lj-XYZ" secondAttribute="centerX" id="lgX-5N-kl7"/>
+                            <constraint firstItem="d8e-HO-ifp" firstAttribute="leading" secondItem="x3d-Lj-XYZ" secondAttribute="leading" id="vu0-Cf-d1c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoPlayer" destination="d8e-HO-ifp" id="7BQ-nt-VUP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzq-Ac-HkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-373.15270935960592" y="1045.5999999999999"/>
         </scene>
     </scenes>
     <resources>
@@ -190,7 +224,4 @@
         <image name="logo" width="108" height="84"/>
         <image name="reading" width="163" height="46"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Hyb-Ew-nxt"/>
-    </inferredMetricsTieBreakers>
 </document>

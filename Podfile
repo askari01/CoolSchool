@@ -7,6 +7,7 @@ target 'CoolSchool' do
 
   # Pods for CoolSchool
   pod 'Kingfisher'
+  pod 'YouTubePlayer'
 
   target 'CoolSchoolTests' do
     inherit! :search_paths

@@ -9,8 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, CellDelegate {
-
-    let videoData = [("First Video", "8ueYlFT0G0c/0"), ("Second Video","kQkzHhFC0cc/0"), ("Third Video", "DEVVdu2jSlo/0"), ("First Video", "8ueYlFT0G0c/0"), ("Second Video","kQkzHhFC0cc/0"), ("Third Video", "DEVVdu2jSlo/0")]
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    let videoData = [("First Video", "YKrwe8i7XNM/0", "YKrwe8i7XNM"),
+                     ("Second Video","kKIj7B1uxeo/0", "kKIj7B1uxeo"),
+                     ("Third Video", "DEVVdu2jSlo/0", "DEVVdu2jSlo"),
+                     ("First Video", "8ueYlFT0G0c/0", "8ueYlFT0G0c"),
+                     ("Second Video","kQkzHhFC0cc/0", "kQkzHhFC0cc"),
+                     ("Third Video", "DEVVdu2jSlo/0", "DEVVdu2jSlo")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +47,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! VideosCVCell
         cell.cellDelegate = self
         cell.tag = indexPath.row
-        let (name, token) = videoData[indexPath.row]
+        let (name, token, video) = videoData[indexPath.row]
         print ("http://img.youtube.com/vi/\(token).jpg")
         let imageURL = URL(string: "http://img.youtube.com/vi/\(token).jpg")
         cell.setValues(picture1: imageURL!, row: indexPath.row)
@@ -49,6 +56,20 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print (indexPath.row)
+        performSegue(withIdentifier: "video", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "video" {
+            if let selectedIndexPath = collectionView?.indexPathsForSelectedItems {
+                let selectedIndexPathRow = selectedIndexPath.first?.row
+                if let vc = segue.destination as? VideoVC {
+                    let (name, token, video) = videoData[selectedIndexPathRow!]
+                    vc.videoURL = URL(string: "https://www.youtube.com/watch?v=\(video)")!
+                    print (vc.videoURL)
+                }
+            }
+        }
     }
     
     func didPressButton(_ tag: Int) {
