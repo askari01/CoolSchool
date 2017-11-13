@@ -18,6 +18,7 @@
 		36906D181F86A44400CBD58C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36906D161F86A44400CBD58C /* LaunchScreen.storyboard */; };
 		36906D231F86A44400CBD58C /* CoolSchoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D221F86A44400CBD58C /* CoolSchoolTests.swift */; };
 		36906D2E1F86A44400CBD58C /* CoolSchoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D2D1F86A44400CBD58C /* CoolSchoolUITests.swift */; };
+		36E219BE1FB97C31006EEC3B /* VideosCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E219BD1FB97C31006EEC3B /* VideosCVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		36906D291F86A44400CBD58C /* CoolSchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolSchoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36906D2D1F86A44400CBD58C /* CoolSchoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolSchoolUITests.swift; sourceTree = "<group>"; };
 		36906D2F1F86A44400CBD58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36E219BD1FB97C31006EEC3B /* VideosCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				366327161F86BB460094BCBC /* AVPlayerVC.swift */,
 				362927641F9D1118000C78A4 /* IAPProduct.swift */,
 				362927661F9D11C5000C78A4 /* IAPService.swift */,
+				36E219BD1FB97C31006EEC3B /* VideosCVCell.swift */,
 			);
 			path = CoolSchool;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			files = (
 				36906D101F86A44400CBD58C /* ViewController.swift in Sources */,
 				362927671F9D11C5000C78A4 /* IAPService.swift in Sources */,
+				36E219BE1FB97C31006EEC3B /* VideosCVCell.swift in Sources */,
 				36906D0E1F86A44400CBD58C /* AppDelegate.swift in Sources */,
 				362927651F9D1118000C78A4 /* IAPProduct.swift in Sources */,
 				366327171F86BB460094BCBC /* AVPlayerVC.swift in Sources */,

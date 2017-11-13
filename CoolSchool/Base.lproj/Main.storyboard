@@ -46,7 +46,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="cell" id="hbI-oY-fn0">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="cell" id="hbI-oY-fn0" customClass="VideosCVCell" customModule="CoolSchool" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="21" width="240" height="147"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -66,6 +66,9 @@
                                                     <constraint firstAttribute="trailing" secondItem="75h-yO-7V9" secondAttribute="trailing" id="hwz-aW-Hre"/>
                                                 </constraints>
                                                 <size key="customSize" width="240" height="147"/>
+                                                <connections>
+                                                    <outlet property="image" destination="75h-yO-7V9" id="Qli-Vp-Hkh"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                         <connections>

@@ -31,13 +31,24 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return 6
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as UICollectionViewCell
-        cell.backgroundColor = UIColor.red
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! VideosCVCell
+        let videoData = [("First Video", "8ueYlFT0G0c/0"), ("Second Video","kQkzHhFC0cc/0"), ("Third Video", "DEVVdu2jSlo/0"), ("First Video", "8ueYlFT0G0c/0"), ("Second Video","kQkzHhFC0cc/0"), ("Third Video", "DEVVdu2jSlo/0")]
+        let (name, token) = videoData[indexPath.row]
+        print ("http://img.youtube.com/vi/\(token).jpg")
+        let imageURL = URL(string: "http://img.youtube.com/vi/\(token).jpg")
+        let imageData = NSData(contentsOf: imageURL! as URL)
+        if imageData != nil {
+            cell.image.image = UIImage(data: imageData! as Data)
+        }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print (indexPath.row)
     }
 
     @IBAction func buyAction(_ sender: UIButton) {
