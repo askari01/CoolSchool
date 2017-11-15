@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5I-uV-N1n">
-                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <rect key="frame" x="64" y="20" width="684" height="326"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <dataDetectorType key="dataDetectorTypes"/>
@@ -40,11 +40,11 @@
                                 </connections>
                             </webView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Cqs-je-qMp">
-                                <rect key="frame" x="388" y="169" width="37" height="37"/>
+                                <rect key="frame" x="387.66666666666669" y="169" width="37" height="37"/>
                                 <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39w-za-9lm">
-                                <rect key="frame" x="64" y="8" width="46" height="30"/>
+                                <rect key="frame" x="76" y="32" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="7C6-11-0k9"/>
@@ -57,27 +57,28 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="k5I-uV-N1n" secondAttribute="bottom" id="3rZ-re-dPZ"/>
-                            <constraint firstItem="k5I-uV-N1n" firstAttribute="top" secondItem="fYA-Mv-6Or" secondAttribute="bottom" id="9mE-te-LhC"/>
-                            <constraint firstItem="k5I-uV-N1n" firstAttribute="leading" secondItem="85m-Fm-Txi" secondAttribute="leading" id="Gj7-3f-YP2"/>
+                            <constraint firstAttribute="bottom" secondItem="k5I-uV-N1n" secondAttribute="bottom" constant="29" id="3rZ-re-dPZ"/>
+                            <constraint firstItem="k5I-uV-N1n" firstAttribute="top" secondItem="fYA-Mv-6Or" secondAttribute="bottom" constant="20" id="9mE-te-LhC"/>
+                            <constraint firstItem="k5I-uV-N1n" firstAttribute="leading" secondItem="85m-Fm-Txi" secondAttribute="leading" constant="64" id="Gj7-3f-YP2"/>
                             <constraint firstItem="k5I-uV-N1n" firstAttribute="centerX" secondItem="Cqs-je-qMp" secondAttribute="centerX" id="HpE-AT-Dyw"/>
-                            <constraint firstItem="k5I-uV-N1n" firstAttribute="centerY" secondItem="Cqs-je-qMp" secondAttribute="centerY" id="NjR-Nm-be2"/>
-                            <constraint firstItem="39w-za-9lm" firstAttribute="leading" secondItem="85m-Fm-Txi" secondAttribute="leadingMargin" id="SCh-jL-Q9c"/>
-                            <constraint firstItem="39w-za-9lm" firstAttribute="top" secondItem="fYA-Mv-6Or" secondAttribute="bottom" constant="8" symbolic="YES" id="SOo-fT-zbI"/>
-                            <constraint firstAttribute="trailing" secondItem="k5I-uV-N1n" secondAttribute="trailing" id="d6l-jz-R1i"/>
+                            <constraint firstItem="k5I-uV-N1n" firstAttribute="centerY" secondItem="Cqs-je-qMp" secondAttribute="centerY" constant="-4.5" id="NjR-Nm-be2"/>
+                            <constraint firstItem="39w-za-9lm" firstAttribute="leading" secondItem="85m-Fm-Txi" secondAttribute="leadingMargin" constant="12" id="SCh-jL-Q9c"/>
+                            <constraint firstItem="39w-za-9lm" firstAttribute="top" secondItem="fYA-Mv-6Or" secondAttribute="bottom" constant="32" id="SOo-fT-zbI"/>
+                            <constraint firstAttribute="trailing" secondItem="k5I-uV-N1n" secondAttribute="trailing" constant="64" id="d6l-jz-R1i"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="loading" destination="Cqs-je-qMp" id="BpR-Wk-GT2"/>
+                        <outlet property="mainMenuButton" destination="39w-za-9lm" id="LfC-PZ-2ny"/>
                         <outlet property="webView" destination="k5I-uV-N1n" id="nVJ-Aj-pMO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFf-EA-KCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="gAn-VL-rDi"/>
             </objects>
-            <point key="canvasLocation" x="13" y="1118"/>
+            <point key="canvasLocation" x="12.561576354679804" y="1117.5999999999999"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -174,7 +175,7 @@
                                     <constraint firstItem="WOr-74-ppR" firstAttribute="trailing" secondItem="SxP-jd-hma" secondAttribute="trailingMargin" id="rxK-Gs-GOS"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldC-oF-DiP">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldC-oF-DiP">
                                 <rect key="frame" x="559" y="66" width="40" height="30"/>
                                 <state key="normal" title="Video"/>
                                 <connections>
@@ -194,7 +195,7 @@
                                     <constraint firstAttribute="height" constant="29" id="oBH-Tn-i5J"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLN-b6-E7n">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLN-b6-E7n">
                                 <rect key="frame" x="146" y="66" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="Dsv-eg-9iJ"/>
@@ -204,7 +205,7 @@
                                     <action selector="buyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m3b-SD-W1o"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr5-nC-W9p">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr5-nC-W9p">
                                 <rect key="frame" x="200" y="66" width="74" height="30"/>
                                 <state key="normal" title="Restore"/>
                                 <connections>

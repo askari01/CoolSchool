@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -69,7 +69,7 @@
 
 /* Begin PBXFileReference section */
 		0860F87032CF7E0DE78A09205850BDF0 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
-		0A775B1088AD9826302CBFCE334BEF74 /* Pods-CoolSchool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CoolSchool.modulemap"; sourceTree = "<group>"; };
+		0A775B1088AD9826302CBFCE334BEF74 /* Pods-CoolSchool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CoolSchool.modulemap"; sourceTree = "<group>"; };
 		0B02A5F9166EEC359AD219FB7F544A45 /* Pods-CoolSchoolTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoolSchoolTests-dummy.m"; sourceTree = "<group>"; };
 		0F80CDA60B1F3BB66E521326C296DD6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1001C63305253843F5A34F6AD27AE63D /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		3626DF919DCC9ADF7B705BB6604D0649 /* YouTubePlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YouTubePlayer.xcconfig; sourceTree = "<group>"; };
 		3864C04A6CBB50D015B8B5249ED9AA8E /* Pods-CoolSchoolTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoolSchoolTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		39B45B1D25897E0F929E51CEE14E1667 /* Pods-CoolSchoolUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoolSchoolUITests-umbrella.h"; sourceTree = "<group>"; };
-		4203CCC0C40DBA8C051C5B751AB54BE8 /* YouTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YouTubePlayer.framework; path = YouTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4203CCC0C40DBA8C051C5B751AB54BE8 /* YouTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YouTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		449DD76C15C2D08E9B0DF819712563BA /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
 		46769FFFF60061DEA1D86203D17FE713 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
 		53E7F4B5154933CDBE14B99D925BB13D /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
@@ -106,30 +106,30 @@
 		84E3D123CF975E0508C437C765652739 /* Pods-CoolSchool-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoolSchool-acknowledgements.plist"; sourceTree = "<group>"; };
 		88BE4C87606D8952C4846C64187CB87C /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
 		917E680BFC47A795E4BCD1BD2D2190BA /* Pods-CoolSchoolTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoolSchoolTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		963FDA890275E971EFADCAE0E6DE8F0D /* Pods-CoolSchoolUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoolSchoolUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		99EE8DDE43981625FD74C3D5A40FD06C /* Pods-CoolSchoolUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoolSchoolUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9BE79A42445239B6CECC476DDD16B7BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DB91C29E9A4B88D69A32144ECBF431B /* Pods-CoolSchoolUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoolSchoolUITests-frameworks.sh"; sourceTree = "<group>"; };
-		A5127B7E602B37BB2076848075379509 /* Pods-CoolSchoolUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CoolSchoolUITests.modulemap"; sourceTree = "<group>"; };
+		A5127B7E602B37BB2076848075379509 /* Pods-CoolSchoolUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CoolSchoolUITests.modulemap"; sourceTree = "<group>"; };
 		A90BE59FE7F9DFC9E607264ED884CC36 /* YouTubePlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YouTubePlayer-dummy.m"; sourceTree = "<group>"; };
 		ABDFCB13B24F4FF60F2DD98DCA7DA494 /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
-		AC735CF9288D664B61A9B6D3FEBAA01F /* YouTubePlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YouTubePlayer.modulemap; sourceTree = "<group>"; };
+		AC735CF9288D664B61A9B6D3FEBAA01F /* YouTubePlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YouTubePlayer.modulemap; sourceTree = "<group>"; };
 		AC84D02C7BC5CBC8E72E6E3DE8141137 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
 		AD34A24256A9E65EFEAFFE17D58B1CA6 /* Pods-CoolSchoolUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoolSchoolUITests-dummy.m"; sourceTree = "<group>"; };
-		AEB7A881CEAE591A3078A1A6D3843372 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		AEB7A881CEAE591A3078A1A6D3843372 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kingfisher.modulemap; sourceTree = "<group>"; };
 		AF061D68C78F1196263945B728840D8E /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
 		AFF1C2D8EBF1234BEC24DC457B0416A5 /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
 		B63A47B044C940F6F51F318D7B1F3F79 /* Pods-CoolSchool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoolSchool.debug.xcconfig"; sourceTree = "<group>"; };
-		C6A05EB76A6B140486DEBD88A4D297F6 /* Pods_CoolSchoolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CoolSchoolTests.framework; path = "Pods-CoolSchoolTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB25E043A64EC482D066934B6EB47A06 /* Pods_CoolSchoolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CoolSchoolUITests.framework; path = "Pods-CoolSchoolUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A05EB76A6B140486DEBD88A4D297F6 /* Pods_CoolSchoolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolSchoolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB25E043A64EC482D066934B6EB47A06 /* Pods_CoolSchoolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolSchoolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD28B2E5FB251B8BF8DFEA60B19248F /* Pods-CoolSchool-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoolSchool-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D027DC95DA1E03A70BA9FD9A5DAE469E /* Pods-CoolSchoolTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CoolSchoolTests.modulemap"; sourceTree = "<group>"; };
+		D027DC95DA1E03A70BA9FD9A5DAE469E /* Pods-CoolSchoolTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CoolSchoolTests.modulemap"; sourceTree = "<group>"; };
 		D36B6293B15D7ADA5E5CDF359281B142 /* Pods-CoolSchool-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoolSchool-resources.sh"; sourceTree = "<group>"; };
 		D4593F43203511FFD59857B24F1F7D77 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
-		D5C7235141F8FB3A0C5AFFE063CAD392 /* YTPlayer.html */ = {isa = PBXFileReference; includeInIndex = 1; name = YTPlayer.html; path = YouTubePlayer/YouTubePlayer/YTPlayer.html; sourceTree = "<group>"; };
+		D5C7235141F8FB3A0C5AFFE063CAD392 /* YTPlayer.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = YTPlayer.html; path = YouTubePlayer/YouTubePlayer/YTPlayer.html; sourceTree = "<group>"; };
 		D70C143770E2A6DAC0790EAF9F2EF3BB /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
-		D94060D3383D831B493AAF4643494146 /* Pods_CoolSchool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CoolSchool.framework; path = "Pods-CoolSchool.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94060D3383D831B493AAF4643494146 /* Pods_CoolSchool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolSchool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC39464DBB25B685409824E9CA6A0E9 /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
 		DD2C2783F3174DF8960A837F06810E83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEC1E17CE487D24F5E95CDD38423F42F /* Pods-CoolSchoolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoolSchoolUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		E12D4671251193DD3EEACAC9653D5D7B /* YouTubePlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YouTubePlayer.swift; path = YouTubePlayer/YouTubePlayer/YouTubePlayer.swift; sourceTree = "<group>"; };
 		E6A520AB860E5139BAB41548365A6FC2 /* YouTubePlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-umbrella.h"; sourceTree = "<group>"; };
 		EE20CDD7E978D6FCDAC8D101736E98B6 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
-		EF9AB6BE552CEEF45058BE4075687DD8 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9AB6BE552CEEF45058BE4075687DD8 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46EFC5CDAF57A92A7B136FFD3525675 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		F6322B143996E74A3C717171077F7408 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
 		F727AD618047E8E80022FB8FE2FF419A /* Pods-CoolSchoolTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoolSchoolTests-resources.sh"; sourceTree = "<group>"; };
@@ -236,7 +236,6 @@
 				EE20CDD7E978D6FCDAC8D101736E98B6 /* UIButton+Kingfisher.swift */,
 				32E6E139B103C87892E7A0C69413A6EC /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -313,7 +312,6 @@
 				B42BFC9CFAD12114AC8F0E93D70F33D3 /* Resources */,
 				3DA8C27092CD2B4860C92CB3B1BEF48A /* Support Files */,
 			);
-			name = YouTubePlayer;
 			path = YouTubePlayer;
 			sourceTree = "<group>";
 		};
@@ -524,7 +522,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0910;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -882,6 +880,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

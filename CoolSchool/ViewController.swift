@@ -65,7 +65,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 let selectedIndexPathRow = selectedIndexPath.first?.row
                 if let vc = segue.destination as? WebVC {
                     let (name, token, video) = videoData[selectedIndexPathRow!]
-                    vc.videoURL = URL(string: "https://www.youtube.com/embed/\(video)")!
+                    vc.videoURL = URL(string: "https://www.youtube.com/embed/\(video)?rel=0&amp;showinfo=0")!
                     print (vc.videoURL)
                 }
             }

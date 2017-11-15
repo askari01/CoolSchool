@@ -13,6 +13,7 @@ class WebVC: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var loading: UIActivityIndicatorView!
+    @IBOutlet weak var mainMenuButton: UIButton!
     
     var myProgressView: Float = 0.0
     var theBool: Bool!
@@ -29,17 +30,27 @@ class WebVC: UIViewController, UIWebViewDelegate {
             videoURL = URL(string: "https://www.youtube.com/watch?v=8ueYlFT0G0c")!
         }
         
+        // view tweak
+        mainMenuButton.layer.cornerRadius = 15
+        webView.clipsToBounds = true
+        webView.backgroundColor = UIColor.black
+        webView.isOpaque = false
+        webView.layer.cornerRadius = 25
+        
+        // request
         let request = URLRequest(url: videoURL!)
         webView.loadRequest(request)
     }
     
     func webViewDidStartLoad(_ webView: UIWebView) {
+        self.loading.isHidden = false
         funcToCallWhenStartLoadingYourWebview()
     }
 
     func webViewDidFinishLoad(_ webView: UIWebView) {
         funcToCallCalledWhenUIWebViewFinishesLoading()
         self.loading.stopAnimating()
+        self.loading.isHidden = true
     }
     
     override func didReceiveMemoryWarning() {
