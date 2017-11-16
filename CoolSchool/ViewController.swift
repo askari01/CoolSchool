@@ -50,6 +50,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let (name, token, video) = videoData[indexPath.row]
         print ("http://img.youtube.com/vi/\(token).jpg")
         let imageURL = URL(string: "http://img.youtube.com/vi/\(token).jpg")
+        cell.clipsToBounds = true
         cell.setValues(picture1: imageURL!, row: indexPath.row)
         return cell
     }
@@ -65,7 +66,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 let selectedIndexPathRow = selectedIndexPath.first?.row
                 if let vc = segue.destination as? WebVC {
                     let (name, token, video) = videoData[selectedIndexPathRow!]
-                    vc.videoURL = URL(string: "https://www.youtube.com/embed/\(video)?rel=0&amp;showinfo=0")!
+                    vc.videoURL = URL(string: "https://www.youtube.com/embed/\(video)?rel=0&amp;showinfo=0;autoplay=1&amp")!
                     print (vc.videoURL)
                 }
             }

@@ -25,6 +25,11 @@ class VideosCVCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         buyButton.layer.cornerRadius = 5
+        image.layer.cornerRadius = 15
+        image.clipsToBounds = true
+        viualEffect.layer.cornerRadius = 15
+        viualEffect.clipsToBounds = true
+        
     }
     
     @IBAction func buyAction(_ sender: UIButton) {
