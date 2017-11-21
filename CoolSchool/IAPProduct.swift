@@ -9,7 +9,6 @@
 import Foundation
 
 enum IAPProduct: String {
-    case nonConsumable = "com.DDH.CoolSchool.VU"
-    case consumableTest = "com.DDH.CoolSchool.Test"
-    case consumableTest2 = "com.DDH.CoolSchool.testingTest"
+    case nonConsumableV1 = "com.DDH.CoolSchool.video1"
+    case nonConsumableV2 = "com.DDH.CoolSchool.video2"
 }

@@ -13,10 +13,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     let videoData = [("First Video", "YKrwe8i7XNM/0", "YKrwe8i7XNM"),
-                     ("Second Video","kKIj7B1uxeo/0", "kKIj7B1uxeo"),
-                     ("Third Video", "DEVVdu2jSlo/0", "DEVVdu2jSlo"),
-                     ("First Video", "8ueYlFT0G0c/0", "8ueYlFT0G0c"),
-                     ("Second Video","kQkzHhFC0cc/0", "kQkzHhFC0cc"),
+                     ("Second Video","l6Qt7M8uGQQ/0", "l6Qt7M8uGQQ"),
                      ("Third Video", "DEVVdu2jSlo/0", "DEVVdu2jSlo")]
     
     override func viewDidLoad() {
@@ -40,7 +37,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -75,11 +72,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func didPressButton(_ tag: Int) {
         print("I have pressed a button with a tag: \(tag)")
-        IAPService.shared.purchase(product: .consumableTest)
+        IAPService.shared.purchase(product: .nonConsumableV1)
     }
 
     @IBAction func buyAction(_ sender: UIButton) {
-        IAPService.shared.purchase(product: .consumableTest2)
+        IAPService.shared.purchase(product: .nonConsumableV2)
     }
     
     @IBAction func restoreAction(_ sender: UIButton) {

@@ -18,9 +18,8 @@ class IAPService: NSObject {
     
     func getProduct() {
         let products = Set([
-                IAPProduct.nonConsumable.rawValue,
-                IAPProduct.consumableTest.rawValue,
-                IAPProduct.consumableTest2.rawValue
+                IAPProduct.nonConsumableV1.rawValue,
+                IAPProduct.nonConsumableV2.rawValue,
             ])
         let request: SKProductsRequest = SKProductsRequest(productIdentifiers: products)
         request.delegate = self
