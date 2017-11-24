@@ -29,13 +29,12 @@ class VideosCVCell: UICollectionViewCell {
         image.clipsToBounds = true
         viualEffect.layer.cornerRadius = 15
         viualEffect.clipsToBounds = true
-        
     }
     
     @IBAction func buyAction(_ sender: UIButton) {
         cellDelegate?.didPressButton(self.tag)
-        viualEffect.isHidden = true
-        buyButton.isHidden = true
+//        viualEffect.isHidden = true
+//        buyButton.isHidden = true
     }
     
     func setValues(picture1: URL, row: Int ) {

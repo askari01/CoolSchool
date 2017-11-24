@@ -139,19 +139,19 @@
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alice" translatesAutoresizingMaskIntoConstraints="NO" id="75h-yO-7V9">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="147"/>
                                                         </imageView>
-                                                        <visualEffectView opaque="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edc-ho-clZ">
+                                                        <visualEffectView hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Edc-ho-clZ">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="147"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="beH-jO-C0p">
                                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="147"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             </view>
-                                                            <blurEffect style="dark"/>
+                                                            <blurEffect style="light"/>
                                                         </visualEffectView>
                                                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERK-I5-HkP">
-                                                            <rect key="frame" x="154" y="100" width="70" height="30"/>
+                                                            <rect key="frame" x="162" y="109" width="70" height="30"/>
                                                             <color key="backgroundColor" red="1" green="0.51744976975555557" blue="0.19295247395833334" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                            <state key="normal" title="$ 0.99">
+                                                            <state key="normal" title="$ 1.99">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
                                                             <connections>
@@ -165,13 +165,13 @@
                                                     <constraint firstItem="Edc-ho-clZ" firstAttribute="leading" secondItem="75h-yO-7V9" secondAttribute="leading" id="0Ax-oh-Aw9"/>
                                                     <constraint firstItem="75h-yO-7V9" firstAttribute="top" secondItem="hbI-oY-fn0" secondAttribute="top" id="0DS-v0-IO6"/>
                                                     <constraint firstAttribute="trailing" secondItem="Edc-ho-clZ" secondAttribute="trailing" id="8IC-62-eky"/>
-                                                    <constraint firstAttribute="bottomMargin" secondItem="ERK-I5-HkP" secondAttribute="bottom" constant="9" id="Aad-ee-d9d"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="ERK-I5-HkP" secondAttribute="bottom" id="Aad-ee-d9d"/>
                                                     <constraint firstAttribute="bottom" secondItem="Edc-ho-clZ" secondAttribute="bottom" id="GBH-ud-IHC"/>
                                                     <constraint firstItem="75h-yO-7V9" firstAttribute="trailing" secondItem="Edc-ho-clZ" secondAttribute="trailing" id="M4t-zN-aKe"/>
-                                                    <constraint firstItem="ERK-I5-HkP" firstAttribute="leading" secondItem="hbI-oY-fn0" secondAttribute="leadingMargin" constant="146" id="QpN-zl-hJz"/>
+                                                    <constraint firstItem="ERK-I5-HkP" firstAttribute="leading" secondItem="hbI-oY-fn0" secondAttribute="leadingMargin" constant="154" id="QpN-zl-hJz"/>
                                                     <constraint firstItem="75h-yO-7V9" firstAttribute="top" secondItem="Edc-ho-clZ" secondAttribute="top" id="SUx-et-vb3"/>
                                                     <constraint firstItem="75h-yO-7V9" firstAttribute="bottom" secondItem="Edc-ho-clZ" secondAttribute="bottom" id="bNx-Ow-JMd"/>
-                                                    <constraint firstAttribute="trailingMargin" secondItem="ERK-I5-HkP" secondAttribute="trailing" constant="8" id="eU7-O3-Fsq"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="ERK-I5-HkP" secondAttribute="trailing" id="eU7-O3-Fsq"/>
                                                     <constraint firstItem="Edc-ho-clZ" firstAttribute="leading" secondItem="hbI-oY-fn0" secondAttribute="leading" id="ozk-1n-8Bl"/>
                                                 </constraints>
                                                 <size key="customSize" width="240" height="147"/>

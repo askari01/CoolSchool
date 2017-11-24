@@ -14,6 +14,7 @@
 		362927671F9D11C5000C78A4 /* IAPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362927661F9D11C5000C78A4 /* IAPService.swift */; };
 		3631F9A81FA76A160005282F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3631F9A71FA76A160005282F /* StoreKit.framework */; };
 		366327171F86BB460094BCBC /* AVPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366327161F86BB460094BCBC /* AVPlayerVC.swift */; };
+		367FF84F1FC74A5100C1D373 /* Bike_Rides.aif in Resources */ = {isa = PBXBuildFile; fileRef = 367FF84E1FC74A5100C1D373 /* Bike_Rides.aif */; };
 		36906D0E1F86A44400CBD58C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D0D1F86A44400CBD58C /* AppDelegate.swift */; };
 		36906D101F86A44400CBD58C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D0F1F86A44400CBD58C /* ViewController.swift */; };
 		36906D131F86A44400CBD58C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36906D111F86A44400CBD58C /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		3631D85A1F9D16D000A4EE85 /* CoolSchool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoolSchool.entitlements; sourceTree = "<group>"; };
 		3631F9A71FA76A160005282F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		366327161F86BB460094BCBC /* AVPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerVC.swift; sourceTree = "<group>"; };
+		367FF84E1FC74A5100C1D373 /* Bike_Rides.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bike_Rides.aif; sourceTree = "<group>"; };
 		36906D0A1F86A44400CBD58C /* CoolSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36906D0D1F86A44400CBD58C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36906D0F1F86A44400CBD58C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				36D6FC961FB9C50600A80005 /* WebVC.swift */,
 				36189B321FBF3D1900AEB585 /* LaunchScreenVC.swift */,
 				36189B341FBF3E3600AEB585 /* OpeningVideo.mp4 */,
+				367FF84E1FC74A5100C1D373 /* Bike_Rides.aif */,
 			);
 			path = CoolSchool;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				36189B351FBF400D00AEB585 /* OpeningVideo.mp4 in Resources */,
 				36906D181F86A44400CBD58C /* LaunchScreen.storyboard in Resources */,
 				36906D151F86A44400CBD58C /* Assets.xcassets in Resources */,
+				367FF84F1FC74A5100C1D373 /* Bike_Rides.aif in Resources */,
 				36906D131F86A44400CBD58C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

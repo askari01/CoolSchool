@@ -51,6 +51,12 @@ extension IAPService: SKPaymentTransactionObserver {
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         for transaction in transactions {
             print (transaction.transactionState.status(), transaction.payment.productIdentifier)
+            
+            if transaction.transactionState.status() == "purchased" || transaction.transactionState.status() == "restored"{
+                UserDefaults.standard.set(true, forKey: transaction.payment.productIdentifier)
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reload"), object: nil)
+            }
+            
             switch transaction.transactionState {
                 case .purchasing: break
                 default: queue.finishTransaction(transaction)
