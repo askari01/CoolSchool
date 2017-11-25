@@ -15,13 +15,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let videoData = [("First Video", "YKrwe8i7XNM/0", "YKrwe8i7XNM"),
-                     ("Third Video", "lEnQ-nKqkkk/0", "lEnQ-nKqkkk"),
-                     ("Second Video","l6Qt7M8uGQQ/0", "l6Qt7M8uGQQ")]
+    let videoData = [("Second Video","l6Qt7M8uGQQ/0", "l6Qt7M8uGQQ"),
+                     ("First Video", "YKrwe8i7XNM/0", "YKrwe8i7XNM"),
+                     ("Third Video", "lEnQ-nKqkkk/0", "lEnQ-nKqkkk")]
     
     let identifier = ["com.DDH.CoolSchool.video0","com.DDH.CoolSchool.video1","com.DDH.CoolSchool.video2"]
     
-    let imageData = ["SW","CC","C"]
+    let imageData = ["C","CC","SW"]
     
     private var audioPlayer: AVAudioPlayer?
     
@@ -103,7 +103,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print (indexPath.row)
-        performSegue(withIdentifier: "video", sender: self)
+        if UserDefaults.standard.value(forKey: identifier[indexPath.row]) as! Bool == true {
+            performSegue(withIdentifier: "video", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

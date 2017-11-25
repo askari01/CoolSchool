@@ -123,33 +123,36 @@
                                         <rect key="frame" x="8" y="8" width="668" height="189"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pNc-0B-UP7">
-                                            <size key="itemSize" width="240" height="147"/>
+                                            <size key="itemSize" width="260" height="159"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="cell" id="hbI-oY-fn0" customClass="VideosCVCell" customModule="CoolSchool" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="21" width="240" height="147"/>
+                                                <rect key="frame" x="0.0" y="15" width="260" height="159"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="147"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="260" height="159"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alice" translatesAutoresizingMaskIntoConstraints="NO" id="75h-yO-7V9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="147"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="260" height="159"/>
                                                         </imageView>
                                                         <visualEffectView hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Edc-ho-clZ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="147"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="260" height="159"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="beH-jO-C0p">
-                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="147"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="260" height="159"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             </view>
                                                             <blurEffect style="light"/>
                                                         </visualEffectView>
-                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERK-I5-HkP">
-                                                            <rect key="frame" x="162" y="109" width="70" height="30"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERK-I5-HkP">
+                                                            <rect key="frame" x="192" y="130" width="70" height="30"/>
                                                             <color key="backgroundColor" red="1" green="0.51744976975555557" blue="0.19295247395833334" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="70" id="0Wm-BV-cxW"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                             <state key="normal" title="$ 1.99">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -165,16 +168,15 @@
                                                     <constraint firstItem="Edc-ho-clZ" firstAttribute="leading" secondItem="75h-yO-7V9" secondAttribute="leading" id="0Ax-oh-Aw9"/>
                                                     <constraint firstItem="75h-yO-7V9" firstAttribute="top" secondItem="hbI-oY-fn0" secondAttribute="top" id="0DS-v0-IO6"/>
                                                     <constraint firstAttribute="trailing" secondItem="Edc-ho-clZ" secondAttribute="trailing" id="8IC-62-eky"/>
-                                                    <constraint firstAttribute="bottomMargin" secondItem="ERK-I5-HkP" secondAttribute="bottom" id="Aad-ee-d9d"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="ERK-I5-HkP" secondAttribute="bottom" constant="-9" id="BhY-2K-HhN"/>
                                                     <constraint firstAttribute="bottom" secondItem="Edc-ho-clZ" secondAttribute="bottom" id="GBH-ud-IHC"/>
                                                     <constraint firstItem="75h-yO-7V9" firstAttribute="trailing" secondItem="Edc-ho-clZ" secondAttribute="trailing" id="M4t-zN-aKe"/>
-                                                    <constraint firstItem="ERK-I5-HkP" firstAttribute="leading" secondItem="hbI-oY-fn0" secondAttribute="leadingMargin" constant="154" id="QpN-zl-hJz"/>
                                                     <constraint firstItem="75h-yO-7V9" firstAttribute="top" secondItem="Edc-ho-clZ" secondAttribute="top" id="SUx-et-vb3"/>
                                                     <constraint firstItem="75h-yO-7V9" firstAttribute="bottom" secondItem="Edc-ho-clZ" secondAttribute="bottom" id="bNx-Ow-JMd"/>
-                                                    <constraint firstAttribute="trailingMargin" secondItem="ERK-I5-HkP" secondAttribute="trailing" id="eU7-O3-Fsq"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="ERK-I5-HkP" secondAttribute="trailing" constant="-10" id="iNY-oc-rfT"/>
                                                     <constraint firstItem="Edc-ho-clZ" firstAttribute="leading" secondItem="hbI-oY-fn0" secondAttribute="leading" id="ozk-1n-8Bl"/>
                                                 </constraints>
-                                                <size key="customSize" width="240" height="147"/>
+                                                <size key="customSize" width="260" height="159"/>
                                                 <connections>
                                                     <outlet property="buyButton" destination="ERK-I5-HkP" id="ksy-cO-Mer"/>
                                                     <outlet property="image" destination="75h-yO-7V9" id="Qli-Vp-Hkh"/>

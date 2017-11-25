@@ -42,6 +42,30 @@ class WebVC: UIViewController, UIWebViewDelegate {
         webView.loadRequest(request)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        print ("did appear")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print ("will appear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print ("will Dis")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print ("did disappear")
+    }
+    
+    override func viewDidLayoutSubviews() {
+        print ("view layout sub")
+    }
+    
+    override func viewWillLayoutSubviews() {
+        print ("view will layout sub")
+    }
+    
     func webViewDidStartLoad(_ webView: UIWebView) {
         self.loading.isHidden = false
         funcToCallWhenStartLoadingYourWebview()
@@ -73,7 +97,7 @@ class WebVC: UIViewController, UIWebViewDelegate {
     }
     
     func timerCallback() {
-        print (self.myProgressView)
+//        print (self.myProgressView)
         if self.theBool {
             if self.myProgressView >= 1 {
                 self.loading.stopAnimating()
