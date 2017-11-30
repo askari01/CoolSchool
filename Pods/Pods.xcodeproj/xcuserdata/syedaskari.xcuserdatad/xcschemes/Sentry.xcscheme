@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0EBADC445344776C03C731B0BBA1494B'
+               BlueprintIdentifier = '917177EBD9A18B75E9D865A9B7D23726'
                BlueprintName = 'Sentry'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Sentry.framework'>

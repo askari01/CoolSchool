@@ -2,6 +2,9 @@ PODS:
   - Firebase/Core (4.6.0):
     - FirebaseAnalytics (= 4.0.5)
     - FirebaseCore (= 4.0.11)
+  - Firebase/Messaging (4.6.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 2.0.6)
   - FirebaseAnalytics (4.0.5):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
@@ -10,7 +13,15 @@ PODS:
   - FirebaseCore (4.0.11):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
   - FirebaseInstanceID (2.0.6)
+  - FirebaseMessaging (2.0.6):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
   - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/Logger (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
   - GoogleToolboxForMac/NSData+zlib (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - Kingfisher (4.1.0)
@@ -29,6 +40,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - Protobuf (3.5.0)
   - Sentry (3.9.1):
     - Sentry/Core (= 3.9.1)
     - Sentry/KSCrash (= 3.9.1)
@@ -39,6 +51,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Core
+  - Firebase/Messaging
   - Kingfisher
   - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `3.9.1`)
   - YouTubePlayer
@@ -58,13 +71,15 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
   FirebaseCore: 2a946ece8fbe3ce1fdeeb55324f273caade22df9
   FirebaseInstanceID: 24958382a1011bba5aaff37e334e7a650b9118f5
+  FirebaseMessaging: 75d83375b0f7a9911568d7bdd1a1a8261cbcbdef
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   Kingfisher: f14df8cbe576bf55f211fa589e9869bceb4ea87d
   KSCrash: 931b6caeebfbfe0d316007fcd209f6cb9889c624
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   Sentry: e2707f9a6b498277d9620a48fcb1bd3b655c8473
   YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: 136390135a74af38e4989c7e504185f62aa2017c
+PODFILE CHECKSUM: 73876226c6fe5f51d0688a5ddf5638b94a5b7008
 
 COCOAPODS: 1.3.1
