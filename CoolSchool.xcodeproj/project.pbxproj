@@ -14,6 +14,7 @@
 		362927671F9D11C5000C78A4 /* IAPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362927661F9D11C5000C78A4 /* IAPService.swift */; };
 		3631F9A81FA76A160005282F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3631F9A71FA76A160005282F /* StoreKit.framework */; };
 		366327171F86BB460094BCBC /* AVPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366327161F86BB460094BCBC /* AVPlayerVC.swift */; };
+		366791D71FD004C4005A95A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 366791D61FD004C4005A95A3 /* GoogleService-Info.plist */; };
 		367FF84F1FC74A5100C1D373 /* Bike_Rides.aif in Resources */ = {isa = PBXBuildFile; fileRef = 367FF84E1FC74A5100C1D373 /* Bike_Rides.aif */; };
 		36906D0E1F86A44400CBD58C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D0D1F86A44400CBD58C /* AppDelegate.swift */; };
 		36906D101F86A44400CBD58C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36906D0F1F86A44400CBD58C /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		3631D85A1F9D16D000A4EE85 /* CoolSchool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoolSchool.entitlements; sourceTree = "<group>"; };
 		3631F9A71FA76A160005282F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		366327161F86BB460094BCBC /* AVPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerVC.swift; sourceTree = "<group>"; };
+		366791D61FD004C4005A95A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		367FF84E1FC74A5100C1D373 /* Bike_Rides.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bike_Rides.aif; sourceTree = "<group>"; };
 		36906D0A1F86A44400CBD58C /* CoolSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36906D0D1F86A44400CBD58C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				36906D141F86A44400CBD58C /* Assets.xcassets */,
 				36906D161F86A44400CBD58C /* LaunchScreen.storyboard */,
 				36906D191F86A44400CBD58C /* Info.plist */,
+				366791D61FD004C4005A95A3 /* GoogleService-Info.plist */,
 				366327161F86BB460094BCBC /* AVPlayerVC.swift */,
 				362927641F9D1118000C78A4 /* IAPProduct.swift */,
 				362927661F9D11C5000C78A4 /* IAPService.swift */,
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36189B351FBF400D00AEB585 /* OpeningVideo.mp4 in Resources */,
+				366791D71FD004C4005A95A3 /* GoogleService-Info.plist in Resources */,
 				36906D181F86A44400CBD58C /* LaunchScreen.storyboard in Resources */,
 				36906D151F86A44400CBD58C /* Assets.xcassets in Resources */,
 				367FF84F1FC74A5100C1D373 /* Bike_Rides.aif in Resources */,
@@ -447,17 +451,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CoolSchool/Pods-CoolSchool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/KSCrash/KSCrash.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Sentry/Sentry.framework",
 				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSCrash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sentry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

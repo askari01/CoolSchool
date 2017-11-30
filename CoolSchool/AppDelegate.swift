@@ -8,6 +8,7 @@
 
 import UIKit
 import Sentry
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("\(error)")
             // Wrong DSN or KSCrash not installed
         }
-        
+        FirebaseApp.configure()
         return true
     }
 

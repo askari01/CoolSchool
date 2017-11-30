@@ -9,6 +9,7 @@ target 'CoolSchool' do
   pod 'Kingfisher'
   pod 'YouTubePlayer'
   pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '3.9.1'
+  pod 'Firebase/Core'
 
   target 'CoolSchoolTests' do
     inherit! :search_paths

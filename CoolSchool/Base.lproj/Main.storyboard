@@ -43,13 +43,12 @@
                                 <rect key="frame" x="387.66666666666669" y="169" width="37" height="37"/>
                                 <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39w-za-9lm">
-                                <rect key="frame" x="76" y="32" width="46" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39w-za-9lm">
+                                <rect key="frame" x="76" y="32" width="46" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="7C6-11-0k9"/>
                                 </constraints>
-                                <state key="normal" title="Main">
+                                <state key="normal" image="reply-all">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -326,8 +325,9 @@
         <image name="background" width="666" height="375"/>
         <image name="logo-2" width="323" height="250"/>
         <image name="reading" width="163" height="46"/>
+        <image name="reply-all" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AZZ-Pm-w4Y"/>
+        <segue reference="yIV-g2-404"/>
     </inferredMetricsTieBreakers>
 </document>
